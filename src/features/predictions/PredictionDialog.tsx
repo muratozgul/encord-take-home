@@ -84,7 +84,7 @@ function PredictionDialog() {
         <div style={{ position: 'relative' }}>
           <img
             ref={imageRefFn}
-            style={{ border: '1px solid red', width: '100%' }}
+            style={{ width: '100%' }}
             alt={image?.name}
             src={image?.src}
           />
@@ -92,11 +92,7 @@ function PredictionDialog() {
             id="viewport"
             key={image?.id || 'unknown'}
             ref={canvasRefFn}
-            style={{
-              border: '1px solid green',
-              position: 'absolute',
-              top: 0,
-            }}
+            style={{ position: 'absolute', top: 0 }}
           />
         </div>
         <DialogContentText>{image?.description}</DialogContentText>
