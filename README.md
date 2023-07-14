@@ -1,5 +1,6 @@
 # NOTES TO REVIEWER:
 + Intentionally used multiple ways/approaches to complete similar tasks in order to showcase my knowledge (For example: both used Functional & Class components, both used hooks & redux, etc...)
++ See the /docs folder for screenshots
 
 # vite-template-redux
 

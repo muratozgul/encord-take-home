@@ -29,18 +29,20 @@ function ImageDialog() {
   }
 
   const onChangeTitle = (text: string) => {
-    setTitle(text.trim());
+    setTitle(text);
   }
 
   const onChangeDescription = (text: string) => {
-    setDescription(text.trim());
+    setDescription(text);
   }
 
   const onSubmit = () => {
-    if (title && description) {
+    if (title.trim() && description.trim()) {
       dispatch(
         imagesSlice.actions.uploadImage({
-          imageId: dialogImageId!, title, description
+          imageId: dialogImageId!,
+          title: title.trim(),
+          description: description.trim(),
         })
       );
     }
